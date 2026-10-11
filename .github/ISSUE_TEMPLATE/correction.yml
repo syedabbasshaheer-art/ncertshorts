@@ -1,0 +1,26 @@
+name: Report a correction
+description: A wrong fact, a wrong answer or a misleading picture
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: The chapter, the section and the way in (Recap, Vocab, Quiz, Theory, Practice or the study buddy).
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What does it say?
+      description: Copy the sentence, or describe the picture.
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: What should it say?
+      description: And where you checked it, if you can: the textbook's page, for example.
+    validations:
+      required: true

@@ -1,0 +1,12 @@
+name: Suggest an idea
+description: Something that would help you study
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: Say what you were trying to do when you wished for it.
+    validations:
+      required: true
